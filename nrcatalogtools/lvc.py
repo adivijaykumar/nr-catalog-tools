@@ -174,7 +174,13 @@ def get_strain_from_lvcnr_file(
 
     Returns
     =======
-    UNDER CONSTRUCTION
+    data_dict: dict
+        Dictionary containing returned data. Keys contain
+            hp: pycbc TimeSeries for the plus polarization
+            hc: pycbc TimeSeries for the cross polarization
+            f_low: Lower frequency in the LVCNR file at the Mtot supplied
+            mass_args, spin_args, fixed_args: Arguments passed into 
+                SimInspiralChooseTDWaveform
     """
 
     longAscNodes = 0
